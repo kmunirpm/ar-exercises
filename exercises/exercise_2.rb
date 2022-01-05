@@ -5,11 +5,10 @@ puts "Exercise 2"
 puts "----------"
 
 store1_update = Store.find_by(id:1)
-store1_update = @store1
+@store1 = store1_update
 
 store2_update = Store.find_by(id:2)
-store2_update = @store2
+@store2 = store2_update
 
-store1_update2 = Store.find_by(@store1)
-store1_update2.name = "Coquitlam"
-store1_update2.save
+store1_update.name = "Square One"
+store1_update.save
