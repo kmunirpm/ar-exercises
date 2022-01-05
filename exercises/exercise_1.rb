@@ -24,4 +24,4 @@ store3 = Store.create(
   womens_apparel: false
 )
 
-puts Store.all.count
+puts "Store Count: #{Store.all.count}"
